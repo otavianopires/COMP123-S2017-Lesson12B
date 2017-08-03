@@ -24,5 +24,32 @@ namespace COMP123_S2017_Lesson12B
         {
             InitializeComponent();
         }
+
+        private void DemoForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// This is the HelloButton event handler for the click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void HelloButton_Click(object sender, EventArgs e)
+        {
+            if(NameTextbox.Text.Length > 0)
+            {
+                HelloLabel.Text = "Hello, " + NameTextbox.Text + "!";
+            }
+            else
+            {
+                HelloLabel.Text = "Hello, World!";
+            }
+        }
+
+        private void HelloLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
